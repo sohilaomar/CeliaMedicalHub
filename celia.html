@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Celia Medical Hub — حجز المواعيد</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Tajawal:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top navigation -->
+  <div class="topbar">
+    <div class="container">
+      <div class="brand">
+        <img src="celia-logo.png" alt="Celia Medical Hub logo" onerror="this.style.display='none'">
+        <h1>CELIA <span style="font-size:12px; display:block; margin-top:2px;">MEDICAL HUB</span></h1>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#booking">Booking</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <header id="home" class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h2>Welcome to Celia Medical Hub</h2>
+        <p>مركز سِليا الطبي — وجهتك للعيون والجمال والصحة النسائية. احجز موعدك بسهولة عبر النموذج أدناه.</p>
+        <a class="cta" href="#booking">Book an Appointment — احجز الآن</a>
+      </div>
+
+      <div style="text-align:center;">
+        <img src="celia-logo.png" alt="Celia Logo Large" style="max-width:100%; height:150px; object-fit:contain;" onerror="this.style.display='none'">
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <div class="section-inner">
+      <h2 class="section-title">About — عن العيادة</h2>
+      <p class="about-text">
+        Celia Medical Hub — First Floor, Madinaty East Hub 138.<br/>
+        نقدم خدمات متكاملة في الجراحة التجميلية، الجلدية، الليزر، الصحة النسائية، التقنيات المساعدة، وأشعة رباعية الأبعاد.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Our Mission</h3>
+          <p>Provide safe, personalized treatments using up-to-date technologies and a caring approach.</p>
+        </div>
+        <div class="card">
+          <h3>الخبرة</h3>
+          <p>فريق طبي متخصص في التجميل والجلدية والنساء، مع خبرة محلية وإقليمية.</p>
+        </div>
+        <div class="card">
+          <h3>Location</h3>
+          <p>مادِنِيتي — East Hub 138, First Floor. Easy access and parking available.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="section-inner">
+      <h2 class="section-title">Services — الخدمات</h2>
+      <div class="cards">
+        <div class="card"><h3>جراحة تجميل</h3><p>عمليات التجميل والزيادات الدقيقة لتحسين المظهر والوظيفة.</p></div>
+        <div class="card"><h3>جلدية وتجميل</h3><p>علاجات الجلد، تقشير، ووصفات للعناية بجمالك.</p></div>
+        <div class="card"><h3>ليزر</h3><p>جلسات ليزر لإزالة الشعر، تجديد البشرة، وعلاجات خاصة.</p></div>
+        <div class="card"><h3>نساء وتجميل نسائي</h3><p>خدمات الصحة النسائية والعناية التجميلية المتخصصة.</p></div>
+        <div class="card"><h3>حقن مجهري</h3><p>تقنيات دعم الخصوبة والعلاجات الدقيقة.</p></div>
+        <div class="card"><h3>أشعه تلفزيونية رباعية الأبعاد</h3><p>فحوصات تصوير رباعية الأبعاد عالية الجودة.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section id="booking">
+    <div class="section-inner">
+      <h2 class="section-title">Booking — احجز موعد</h2>
+
+      <div class="booking-wrap">
+        <form class="booking" id="bookingForm" onsubmit="return false;">
+          <div class="form-row">
+            <div class="field">
+              <label for="fullName">Full name — الاسم الكامل</label>
+              <input id="fullName" type="text" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone — رقم الهاتف</label>
+              <input id="phone" type="tel" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="email">Email — البريد الإلكتروني (اختياري)</label>
+              <input id="email" type="email">
+            </div>
+            <div class="field">
+              <label for="service">Choose service — اختر الخدمة</label>
+              <select id="service" required>
+                <option value="">— اختر خدمة —</option>
+                <option>جراحة تجميل</option>
+                <option>جلدية وتجميل</option>
+                <option>ليزر</option>
+                <option>نساء وتجميل نسائي</option>
+                <option>حقن مجهري</option>
+                <option>أشعه تلفزيونية رباعية الأبعاد</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="date">Preferred date — التاريخ المفضل</label>
+              <input id="date" type="date" required>
+            </div>
+            <div class="field">
+              <label for="time">Preferred time — الوقت المفضل</label>
+              <input id="time" type="time" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="message">Message — الرسالة / سبب الزيارة (اختياري)</label>
+              <textarea id="message"></textarea>
+            </div>
+          </div>
+
+          <div class="submit-row">
+            <button class="btn" id="bookBtn" type="submit">Book Appointment — احجز</button>
+            <button class="btn secondary" type="reset">Reset — إعادة</button>
+          </div>
+        </form>
+
+        <aside class="clinic-card">
+          <h4>Celia Medical Hub</h4>
+          <div class="meta"><strong>Address:</strong> Madinaty East Hub 138, First Floor</div>
+          <div class="meta"><strong>Instagram:</strong> <a href="https://www.instagram.com/celiamedical/" target="_blank">@celiamedical</a></div>
+          <div class="map">
+            <iframe
+              title="Celia Medical Hub map"
+              width="100%" height="100%" frameborder="0" style="border:0"
+              src="https://www.google.com/maps?q=Madinaty+East+Hub+138%2C+Madinaty%2C+Egypt&output=embed"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="inner">
+      <div>
+        <strong>Celia Medical Hub</strong>
+        <div>Madinaty East Hub 138 — First Floor</div>
+      </div>
+      <div>
+        <a href="https://www.instagram.com/celiamedical/" target="_blank">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Confirmation overlay -->
+  <div id="overlay" class="overlay">
+    <div class="modal">
+      <h3 id="modalTitle">Thank you — شكراً</h3>
+      <p id="modalMsg">Thank you, we’ll contact you soon.<br>شكراً، سيتم التواصل معك قريباً.</p>
+      <button class="close-btn" id="closeOverlay">Close — إغلاق</button>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script>
+    const form = document.getElementById('bookingForm');
+    const overlay = document.getElementById('overlay');
+    const closeOverlay = document.getElementById('closeOverlay');
+
+    document.getElementById('bookBtn').addEventListener('click', () => {
+      const name = document.getElementById('fullName').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const service = document.getElementById('service').value;
+      const date = document.getElementById('date').value;
+      const time = document.getElementById('time').value;
+      if (!name || !phone || !service || !date || !time) {
+        alert('Please fill all required fields.');
+        return;
+      }
+      overlay.classList.add('show');
+      form.reset();
+    });
+
+    closeOverlay.addEventListener('click', () => overlay.classList.remove('show'));
+  </script>
+</body>
+</html>
